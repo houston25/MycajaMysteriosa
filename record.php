@@ -14,7 +14,7 @@ $opciones=" ";
 $cantidad=$_POST['cantidad'];
 $recomendar=$_POST['recomendar'];
 $boletin=$_POST['boletin'];
-$link= mysqli_connect('localhost','cajam160_admin','Mystery_31','cajam160_mysterybox');
+$link= mysqli_connect('tonogames.000webhostapp.com','id4696118_tono','tono1234','id4696118_juegos');
 
 if($_POST[opciones]!="")
 {
