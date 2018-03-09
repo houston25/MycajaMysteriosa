@@ -1,0 +1,198 @@
+body{
+	font-family: Arial;
+	font-size: 12px;
+	color: #333333;
+	text-align: center;
+}
+
+
+#Header{
+	background-color: #382983;
+	text-align: left;
+
+}
+.nave{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#Logotipo{
+	width: 55%;
+}
+
+#Logotipo, #Buscador{
+	margin: 10px;
+}
+
+#Logo, #Titulo, #Logotipo, #Buscador, #Btn-Buscar{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#Logo, #Titulo{
+	display: inline-block;
+}
+
+#Logo img{
+	width: 80px;
+}
+
+.Letra-Azul{
+	color: #B9FF04;
+}
+
+#Buscador{
+	width: 35%;
+	text-align: right;
+}
+
+#Buscar{
+	box-shadow: 1px 1px 2px #CCCCCC;
+	border: 1px solid #F7F7F7;
+	border-radius: 5px;
+	height: 30px;
+	width: 220px;
+	padding: 5px 10px;
+}
+
+#Btn-Buscar{
+	padding: 5px 15px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: SteelBlue;
+	color: #CCCCCC;
+}
+
+
+#Titulo{
+	color: #FF7C3B;
+    font-size: 30px;
+	font-family:Mr Dafoe, sans-serif;
+	margin-left: 10px;
+	text-shadow: 0 -3px 0 #333,
+    0 3px 4px rgba(0,0,0,.4),
+    0 4px 5px rgba(0,0,0,.15),
+    0 15px 5px rgba(0,0,0,.18),
+    0 7px 5px rgba(0,0,0,.21);
+
+}
+
+
+#Barra_lateral, #Contenido{
+	display: inline-block;
+	vertical-align: middle;
+	min-height: 430px;
+}
+#Barra_lateral{
+	background-color: #CCCCCC;
+	width: 20%;
+}
+#Contenido{
+	background-color: #E6E6E6;
+	width: 79%;
+}
+
+#Pie{
+	background-color: #F1F1F1;
+	border-top: 1px solid #CCCCCC;
+	min-height: 100px;
+	margin-top: 10px;
+}
+
+.shadow{
+  font-family:Mr Dafoe, sans-serif;
+  font-size: 30px;
+  text-align:center;
+  text-shadow: 0 -3px 0 #333,
+   0 3px 4px rgba(0,0,0,.4),
+    0 4px 5px rgba(0,0,0,.15),
+    0 15px 5px rgba(0,0,0,.18),
+    0 7px 5px rgba(0,0,0,.21);
+  color: #B9FF04;
+}
+
+/*------Nav-------*/
+header {
+	width:100%;
+	position: fixed;
+	z-index: 99;
+}
+
+header nav {
+	width:100%;
+	background:#2f354e;
+}
+
+.menu_bar {
+	display:none;
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+
+header nav ul li span {
+	margin-right:10px;
+}
+
+header nav ul li a:hover {
+	background:#2ecc71;
+	text-decoration: none;
+	color:#ffffff;
+}
+
+
+@media screen and (max-width:800px ) {
+	header nav {
+		width:200px;
+		height:100%;
+		left:-100%;
+		margin:0px;
+		position: fixed;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+		text-align:center;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#2f354e;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+}
+/*--------End of the nav-------*/

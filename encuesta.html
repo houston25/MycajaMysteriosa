@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.ico">
+
+    <title>Mystery Box</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+    
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#" id="Titulo"><img src="images/logo.png" width="80">ystery<span class="shadow">Box</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="precios.html">Precios <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cajas</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Cartas Comunes</a>
+                        <a class="dropdown-item" href="#">Cartas Epicas</a>
+                        <a class="dropdown-item" href="#">Cartas Especiales</a>
+                        <a class="dropdown-item" href="#">Cartas Legendaria</a>
+                        <a class="dropdown-item" href="#">Cartas de Edici&oacute;n Especial</a>
+                    </div>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Como Funciona</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <main role="main" class="container">
+
+        <div class="starter-template">
+            <h1>Encuesta</h1>
+            <p class="lead">Solicitamos tu apoyo para poder brindarte una mejor experiencia y disfrutes m&aacute;s las cajas cada ocacion que recibas una y poder satisfacer tus necesidades.</p>
+        </div>
+        <!-- Encuesta     -->
+     
+        <form action="record.php" method="post">
+            
+            <div class="form-group row">
+                
+                <label for="edad" class="col-sm-2 col-form-label">¿Cual es tu Edad?</label>
+                <div class=" col-sm-4">
+                    <input type="number" class="form-control" id="edad" name="edad" placeholder="18" required>
+                </div>
+                
+                <label for="sexo" class="col-sm-2 col-form-label">¿Cual es tu Sexo?</label>
+                <div class=" col-sm-4">
+                    <select class="form-control" id="sexo" name="sexo" required>
+                        <option value="" disabled selected>Elige una opci&oacute;n</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+            <div class="form-group row">
+                    
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="inputEmail3" required name="correo"placeholder="Email">
+                    </div>
+                    
+                    <label for="procedencia" class="col-sm-2 col-form-label">¿De donde nos visitas?</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="procedencia" class="form-control" required name="procedencia" placeholder="Ciudad o Estado">
+                    </div>
+                
+            </div>
+            
+            <div class="form-group row">
+                    
+                    <label for="enterar" class="col-sm-2 col-form-label">¿Como te enteraste de nosotros?</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="enterar" name="enterar"placeholder="Google, Redes Sociales, otro">
+                    </div>
+                    
+                    <label for="cuanto" class="col-sm-2 col-form-label">¿Cuanto pagarias por una caja misteriosa?</label>
+                    <div class="col-sm-4">
+                        <input type="number" id="cuanto" class="form-control" name="cuanto" placeholder="500">
+                    </div>
+                
+            </div>
+            
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">¿Te gustaria recibir mensualmente la caja?</legend>
+                    <div class="col-sm-1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="recibir" id="gridRadios1" value="si" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="recibir" id="gridRadios2" value="no">
+                            <label class="form-check-label" for="gridRadios2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <legend class="col-form-label col-sm-2 pt-0">¿Pagarias $500 al mes por la caja Rara?</legend>
+                    <div class="col-sm-1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="mensual" id="gridRadios1" value="si" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="mensual" id="gridRadios2" value="no">
+                            <label class="form-check-label" for="gridRadios2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <legend class="col-form-label col-sm-2 pt-0">¿Pagarias $5500 al año por la caja Rara en suscripcion mensual?</legend>
+                    <div class="col-sm-1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="anual" id="gridRadios1" value="si" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="anual" id="gridRadios2" value="no">
+                            <label class="form-check-label" for="gridRadios2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <legend class="col-form-label col-sm-2 pt-0">¿Pagarias la subscripcion anual si pagaras a meses sin intereses?</legend>
+                    <div class="col-sm-1">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="meses" id="gridRadios1" value="si" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="meses" id="gridRadios2" value="no">
+                            <label class="form-check-label" for="gridRadios2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>    
+            </fieldset>
+            
+            <div class="form-group row">
+                
+                <label for="enterar" class="col-sm-2 col-form-label">¿Que te gustaria que agregaramos en las cajas?</label>
+                    <div class="col-sm-4">
+                        <textarea class="form-control" id="enterar" name="incluir" placeholder="Cualquier cosa que te agradaria recibir"></textarea>
+                    </div>
+                
+                <div class="col-sm-2">Que te gustaria mas en la caja</div>
+                <div class="col-sm-4">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="opciones[]" type="checkbox" id="gridCheck1" value="Gorra">
+                        <label class="form-check-label" for="gridCheck1">
+                          Gorra
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">  
+                        <input class="form-check-input" name="opciones[]" type="checkbox" id="gridCheck2" value="Taza">
+                        <label class="form-check-label" for="gridCheck2">
+                          Taza
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                            <input class="form-check-input" name="opciones[]" type="checkbox" id="gridCheck3" value="Playera">
+                            <label class="form-check-label" for="gridCheck3">
+                                Playera
+                            </label>
+                      </div>
+                        <div class="form-check form-check-inline">  
+                        <input class="form-check-input" name="opciones[]" type="checkbox" id="gridCheck4" value="Mochila">
+                        <label class="form-check-label" for="gridCheck4">
+                          Mochila
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="opciones[]" type="checkbox" id="gridCheck5" value="Etiquetas">
+                        <label class="form-check-label" for="gridCheck5">
+                          Etiquetas
+                        </label>
+                      </div>
+                </div>
+              </div>
+            
+            <fieldset class="form-group">
+                <div class="row">
+
+                    <legend class="col-form-label col-sm-2 pt-0">¿Consideras de 3 a 5 articulos de calidad en la caja misteriosa son convenientes al precio pagado?</legend>
+                    <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="cantidad" id="gridRadios1" value="si" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="cantidad" id="gridRadios2" value="no">
+                            <label class="form-check-label" for="gridRadios2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <legend class="col-form-label col-sm-2 pt-0">¿Recomendarias el sitio?</legend>
+                    <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="recomendar" id="gridRadios1" value="si" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="recomendar" id="gridRadios2" value="no">
+                            <label class="form-check-label" for="gridRadios2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <legend class="col-form-label col-sm-2 pt-0">¿Quieres suscribirte al boletin de noticias?</legend>
+                    <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="boletin" id="gridRadios1" value="si" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Si
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="boletin" id="gridRadios2" value="no">
+                            <label class="form-check-label" for="gridRadios2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <input type="submit" class="btn btn-primary" value="Enviar encuesta">
+                  </div>    
+                  <br>
+                 <a href="index.html"><img src="images/boton.png"</a>
+                </div>
+              </div>
+</form>
+        
+    </main>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
